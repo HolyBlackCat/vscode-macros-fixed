@@ -1,10 +1,10 @@
 {
-    "name": "macros",
-    "displayName": "macros",
-    "description": "automate repetitive actions with custom macros",
-    "version": "1.2.0",
-    "publisher": "geddski",
-    "repository": "https://github.com/geddski/macros",
+    "name": "macros-fixed",
+    "displayName": "macros (fixed)",
+    "description": "Automate repetitive actions with custom macros",
+    "version": "1.2.1",
+    "publisher": "holyblackcat",
+    "repository": "https://github.com/HolyBlackCat/vscode-macros-fixed",
     "engines": {
         "vscode": "^1.5.0"
     },
@@ -19,9 +19,8 @@
         "configuration": {
             "type": "object",
             "title": "Macros configuration",
-            "properties":{
-                "macros":{
-                }
+            "properties": {
+                "macros": {}
             }
         }
     },
@@ -29,12 +28,12 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
+        "@types/mocha": "^2.2.32",
         "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "eslint": "^3.6.0",
+        "mocha": "^6.1.3",
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0"
     },
     "dependencies": {
         "promise-series": "^1.0.0"
